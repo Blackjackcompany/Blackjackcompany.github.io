@@ -1,17 +1,52 @@
+/* Общие стили */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #547e54b9;
+    background-color: #2e2e2e;
     color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#game-board {
-    margin: 20px auto;
-    width: 30%;
-    background-color: #ddb366;
+/* Контейнер для игры и панели вероятностей */
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Стиль для панели вероятностей (слева) */
+#probability-board {
+    background-color: #404040;
     padding: 20px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px #000;
+    border-radius: 10px;
+    width: 300px;
+}
+
+#probability-board h2 {
+    margin-top: 0;
+}
+
+#probability-board h3 {
+    margin-bottom: 10px;
+}
+
+#probability-board p {
+    margin: 5px 0;
+}
+
+/* Стиль для игрового стола (справа) */
+#game-board {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hand {
@@ -20,16 +55,34 @@ body {
 
 .cards {
     display: flex;
-    justify-content: center;
+    gap: 10px;
+}
+
+#controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 button {
-    margin: 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 #status {
     margin-top: 20px;
     font-size: 18px;
 }
+
+#deck-info {
+    margin-top: 10px;
+}
+

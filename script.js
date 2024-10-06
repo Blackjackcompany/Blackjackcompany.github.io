@@ -8,7 +8,7 @@ let hasPlayerStood = false;
 let numberOfDecks = 8; // Using 8 decks of 52 cards
 let previousDeck = [];
 
-const suits = ['♥', '♠', '♣', '♦'];
+const suits = ['Hearts', 'Spades', 'Clubs', 'Diamonds'];
 const values = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King'];
 
 // Create a deck of 8 standard 52-card decks
@@ -190,7 +190,7 @@ const renderHands = () => {
 
     playerHand.forEach(card => {
         const cardElem = document.createElement('div');
-        cardElem.textContent = ` ${card.value}${card.suit}`;
+        cardElem.textContent = `${card.value} of ${card.suit}`;
         playerHandElem.appendChild(cardElem);
     });
 
@@ -199,7 +199,7 @@ const renderHands = () => {
         if (index === 1 && !hasPlayerStood) {
             cardElem.textContent = "Hidden";
         } else {
-            cardElem.textContent = ` ${card.value}${card.suit}`;
+            cardElem.textContent = `${card.value} of ${card.suit}`;
         }
         dealerHandElem.appendChild(cardElem);
     });
