@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-board">
+        <div id="dealer-hand" class="hand">
+            <h2>Dealer (Score: <span id="dealer-score">0</span>)</h2>
+            <div class="cards"></div>
+        </div>
+        <div id="player-hand" class="hand">
+            <h2>Player (Score: <span id="player-score">0</span>)</h2>
+            <div class="cards"></div>
+        </div>
+        <div id="deck-info">
+            <h3>Cards left in deck: <span id="cards-left">0</span></h3>
+        </div>
+        <div id="probability-info">
+            <h3>Player win probability: <span id="player-win-probability">0%</span></h3>
+            <h3>Player lose probability: <span id="player-lose-probability">0%</span></h3>
+            <h3>Dealer win probability: <span id="dealer-win-probability">0%</span></h3>
+            <h3>Dealer lose probability: <span id="dealer-lose-probability">0%</span></h3>
+        </div>
+        <div id="next-hit-info">
+            <h3>If you hit: Bust probability: <span id="bust-probability">0%</span>, Win probability: <span id="next-win-probability">0%</span></h3>
+        </div>
+        <div id="controls">
+            <button id="hit-btn">Hit</button>
+            <button id="stand-btn">Stand</button>
+            <button id="reset-btn">Reset</button>
+            <button id="new-deck-btn">New Deck</button>
+        </div>
+        <div id="status"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #547e54b9;
+    color: white;
+}
+
+#game-board {
+    margin: 20px auto;
+    width: 30%;
+    background-color: #ddb366;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.hand {
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+}
